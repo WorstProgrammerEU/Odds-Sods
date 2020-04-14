@@ -14,6 +14,7 @@ then
 ===================================================
 ==================================================="
   read -n 1 -s -r -p "Press any key to use the only attack you know :p"; echo
+  echo "=== Metapod uses Harden! ==="
 
   echo "+Let's get that root password changed for a start..."
   passwd root
@@ -31,7 +32,6 @@ then
     passwd $username
   fi
 
-  echo "=== Metapod uses Harden! ==="
   echo "+Backing up old ssh keys..."
   cd /etc/ssh
   mkdir kali_default
